@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -402,24 +403,15 @@ export default function HomePage() {
 
           <div className="flex items-center ml-auto">
             <div className="hidden md:flex items-center space-x-8 mr-8">
-              <a
+              <Link
                 href="/"
                 className="hover:text-[#00C4A9] transition-colors nav-item"
               >
                 Home
-              </a>
-              <a
-                href="/map"
-                className="hover:text-[#00C4A9] transition-colors nav-item"
-              >
-                Live Map
-              </a>
-              <a
-                href="/contribute"
-                className="hover:text-[#00C4A9] transition-colors nav-item"
-              >
-                Contribute
-              </a>
+              </Link>
+              <Link href="/map">Live Map</Link>
+              <Link href="/contribute">Contribute</Link>
+              
             </div>
             {/* <a
               href="#"
@@ -444,12 +436,12 @@ export default function HomePage() {
               urban soundscapes, transforming noise into actionable insight for
               healthier communities.
             </p>
-            <a
+            <Link
               href="/map"
               className="bg-[#00C4A9] text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-opacity-90 transition-transform transform hover:scale-105 inline-block hero-button"
             >
               Explore the Live Map
-            </a>
+            </Link>
           </div>
         </section>
 
