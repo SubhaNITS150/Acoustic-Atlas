@@ -403,16 +403,22 @@ export default function HomePage() {
           <div className="flex items-center ml-auto">
             <div className="hidden md:flex items-center space-x-8 mr-8">
               <a
-                href="#"
+                href="/"
                 className="hover:text-[#00C4A9] transition-colors nav-item"
               >
                 Home
               </a>
               <a
-                href="#"
+                href="/map"
                 className="hover:text-[#00C4A9] transition-colors nav-item"
               >
                 Live Map
+              </a>
+              <a
+                href="/contribute"
+                className="hover:text-[#00C4A9] transition-colors nav-item"
+              >
+                Contribute
               </a>
             </div>
             {/* <a
@@ -439,7 +445,7 @@ export default function HomePage() {
               healthier communities.
             </p>
             <a
-              href="#"
+              href="/map"
               className="bg-[#00C4A9] text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-opacity-90 transition-transform transform hover:scale-105 inline-block hero-button"
             >
               Explore the Live Map
